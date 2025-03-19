@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../public/background.jpg"), #fce4ec;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.square {
+  background: lavender;
+  border: 1px solid #999;
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 85px;
+  height: 85px;
+  width: 85px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.square[data-value="X"] {
+  background-color: #ffcccb; /* Pastel Pink for X */
+}
+
+.square[data-value="O"] {
+  background-color: #fffacd; /* Pastel Yellow for O */
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-info {
+  margin-left: 20px;
+}
